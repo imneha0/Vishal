@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Vishal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #FFD2E5, #FFFCF5); /* Soft pastel color gradient */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #87CEEB; /* Sky Blue */
+            padding: 20px;
+            transition: background-color 0.5s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 0;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        main {
+            padding: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 60px; /* Adjust the padding as needed */
+            opacity: 0; /* Initially set opacity to 0 for sliding effect */
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        main.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #87CEEB; /* Sky Blue */
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.5s ease;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sorry Vishal</h1>
+    </header>
+
+    <main id="poem">
+        <p>Oh Vishal, tall and handsome,<br>
+            In life's chaos, let's find some ransom.<br>
+            With finances tight and job hunting strife,<br>
+            Let's add a dash of humor to your life.</p>
+
+        <p>On bike trips, wind in your hair,<br>
+            Finding joy in the open air.<br>
+            But, my dear Vishal, don't you fret,<br>
+            We'll turn things around, you can bet.</p>
+
+        <p>Pizza slices, a cheesy delight,<br>
+            A comfort in the gloomiest night.<br>
+            KGF on the screen, action-packed,<br>
+            In this rollercoaster, let's stay intact.</p>
+
+        <p>I apologize for the suffocating air,<br>
+            In this relationship, let's repair.<br>
+            I can't reverse time, that's true,<br>
+            But together, we'll find a breakthrough.</p>
+
+        <p>A chance for us to mend and heal,<br>
+            To create memories that are real.<br>
+            I know times are tough, a bit rough,<br>
+            But let's sprinkle laughter, that's enough.</p>
+
+        <p>Your fears, I understand,<br>
+            Trust me, hand in hand.<br>
+            Transparency and trust we'll weave,<br>
+            In this journey, let's believe.</p>
+
+        <p>No blame games, no pointing fingers,<br>
+            Just understanding that lingers.<br>
+            I won't accuse, won't hold a grudge,<br>
+            Let's build bridges, not bear a smudge.</p>
+
+        <p>So, Vishal, give us a chance,<br>
+            In this dance of life, let's enhance.<br>
+            I promise, no blaming, no shame,<br>
+            Just making better memories, our aim.</p>
+
+        <p>Let's face the storms with a grin,<br>
+            Together, we're sure to win.<br>
+            In the comedy of errors, we'll find a plot,<br>
+            With your cuteness, Vishal, we've got a lot! 💖🌟</p>
+    </main>
+
+    <footer>
+        <p>Created with love by Neha</p>
+    </footer>
+
+    <script>
+        // Add a class to the main section to trigger the sliding effect
+        window.addEventListener('scroll', () => {
+            const main = document.getElementById('poem');
+            const mainPosition = main.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+
+            if (mainPosition < screenPosition) {
+                main.classList.add('show');
+            }
+        });
+    </script>
+</body>
+</html>
